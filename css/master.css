@@ -1,0 +1,51 @@
+body{
+  background: #D1D7EF;
+  text-align: center;
+}
+
+img {
+  height: 10%;
+  width: 10%;
+  float: right;
+  margin: "auto";
+}
+
+.scripture {
+  font-style: italic;
+  color: blue;
+}
+
+.boxed {
+  font-style: italic;
+  font-size: 25px;
+  color: black;
+  background-color: gray;
+  border: 5px solid blue;
+}
+
+#dailyverse {
+  color: black;
+}
+
+#header {
+  background-color: #444;
+}
+/* Navbar container */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+#navbar a {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#heading {
+
+}

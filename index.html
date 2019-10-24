@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+	<title>UTSA Bereans</title>
+	<link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+	<div id="navbar">
+		<a href="./index.html">Home</a>
+		<a href="#about">About</a>
+		<a href="#teaching">Teaching</a>
+		<a href="./login.php">Login</a>
+	</div>
+
+	<div id="heading">
+		<h1>UTSA Bereans</h1>
+		<img src="./img/bible-icon.png" />
+	</div>
+
+	<div id="body">
+		<h3 class="scripture">
+			"These were more noble than those in Thessalonica, in that they received
+			the word with all readiness of mind, and searched the scriptures daily,
+			whether those things were so." ~ Acts 17:11-12
+		</h3>
+
+		<p class="boxed">
+			The mission of the UTSA Bereans is to guide people in their relationship
+			with God by making the truths in the bible understandable. The bible can
+			at times, be a complex and complicated book to read, let alone understand.
+			With UTSA Bereans, we want to equip disciples with the necessary tools
+			needed to study, examine, and understand The Word of God.
+		</p>
+
+		<hr />
+
+		<h2>Study Groups</h2>
+
+		<h3 class="scripture">
+			"And if one prevail against him, two shall withstand him; and a threefold
+			cord is not quickly broken." ~ Ecclesiastes 4:12
+		</h3>
+
+		<p>
+			To help people gain a deeper understanding of the bible, we have weekly bible
+			studies.
+		</p>
+
+		<hr />
+
+		<h3 class="scripture">
+			"All scripture is given by the insperation of God, and is
+			profitable for doctrine, for reproof, for correction, for
+			instruction in righteousness: That the man of God may be
+			perfect, thoroughly furnished unot all good work"
+			2 Timothy 3:16-17
+		</h3>
+	</div>
+
+	<div id="login">
+		<form action="http://www.blueletterbible.com">
+
+			<input type="submit" value="LOGIN">
+			<input type="submit" value="REGISTER">
+		</form>
+	</div>
+
+	<div id="dailyverse" id="boxed">
+		<!-- Daily Verse form Bible Gateway-->
+		<script type="text/javascript">
+		(function() {
+
+			/* Keep everything in BG variable
+				augment existing variable if it exists.
+			*/
+			if ( !window.BG || typeof window.BG !== 'object') {
+				window.BG = {};
+			}
+			var BG = window.BG;
+
+			BG.votdWriteCallback = function(json) {
+				var votd = json.votd;
+				var votd_html = '';
+				votd_html += '<div>' + votd.text;
+				votd_html += ' -<a href="' + votd.permalink +'">' + votd.display_ref + '</a>';
+				if (votd.audiolink) {
+					votd_html += ' <a rel="nofollow" href="' + votd.audiolink + '" title="Listen to chapter"><img alt="Listen to chapter" src="//www.biblegateway.com/assets/images/audio/sound.gif" border=0/></a>';
+				}
+				votd_html += '</div>';
+				document.write(votd_html);
+			};
+
+			window.BG = BG;
+
+			})();
+		</script>
+		<script src="https://www.biblegateway.com/votd/get/?format=json&version=KJV&callback=BG.votdWriteCallback"></script>
+	</div>
+
+
+	<p>Webmaster: <a href="mailto:zaccarson8715@gmail.com">Zachary Carson</a></p>
+</body>
