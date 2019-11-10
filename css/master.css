@@ -4,10 +4,15 @@ body{
 }
 
 img {
-  height: 10%;
-  width: 10%;
+  height: 5%;
+  width: 5%;
   float: right;
   margin: "auto";
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 .scripture {
@@ -21,6 +26,14 @@ img {
   color: black;
   background-color: gray;
   border: 5px solid blue;
+}
+
+.err {
+  color: red;
+}
+
+#signup-form {
+  align: center;
 }
 
 #dailyverse {
