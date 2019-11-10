@@ -11,11 +11,11 @@
 		<a href="#about">About</a>
 		<a href="#teaching">Teaching</a>
 		<a href="./login.php">Login</a>
+		<img src="./img/bible-icon.png" />
 	</div>
 
 	<div id="NavBar">
 		<h1>UTSA Bereans</h1>
-		<img src="./img/bible-icon.png" />
 	</div>
     <div>
         <form action="www.google.com" method='get'>

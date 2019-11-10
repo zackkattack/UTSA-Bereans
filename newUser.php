@@ -12,15 +12,15 @@
 		<a href="#about">About</a>
 		<a href="#teaching">Teaching</a>
 		<a href="./login.html">Login</a>
+		<img src="./img/bible-icon.png" />
 	</div>
 
 	<div id="heading">
-		<img src="./img/bible-icon.png" />
 		<h1>UTSA Bereans</h1>
 	</div>
 	
-    <div class='signup-form' style="align:center; width=50%">
-        <form action="www.google.com">
+    <div class='signup-form' action="">
+        <form action="login.php">
             <p>First Name:<input type="text" name="create-user" id="first-name"></p>
             <p>Last Name:<input type="text" name="create-user" id="last-name"></p>
 			<p>Username:<input type="text" onchange="validate();" name="create-user" id="username"></p>
@@ -28,18 +28,13 @@
 			<p id='errChar' class='err'></p>
             <p>Password:<input type="password" name="create-user" id="password"></p>
 
-			<table border='1px' class='center'>
-				<tr>
-					<td><input type="radio" name="college" id="art">Fine Arts
-					<td><input type="radio" name="college" id="business">Business
-					<td><input type="radio" name="college" id="education">Education
-				</tr>
-				<tr>
-					<td><input type="radio" name="college" id="engineering">Engineering
-					<td><input type="radio" name="college" id="architecture">Architecture
-					<td><input type="radio" name="college" id="sciences">Sciences
-				</tr>
-			</table>
+			<h4>College:</h4>
+			<input type="radio" name="college" id="art">Fine Arts <br>
+			<input type="radio" name="college" id="business">Business <br>
+			<input type="radio" name="college" id="education">Education <br>
+			<input type="radio" name="college" id="engineering">Engineering <br>
+			<input type="radio" name="college" id="architecture">Architecture <br>
+			<input type="radio" name="college" id="sciences">Sciences <br>
 
 			<!-- date -->
 			<?php
@@ -47,7 +42,7 @@
 				print "<p id='errYear' class='err'></p>"
 			?>
 
-			<h3>Enter a Month:</h3>
+			<h4>Month:</h4>
 			<table border='1px' class='center'>
 				<?php
 					print '<tr>';
@@ -67,7 +62,7 @@
 							print '<td><br/><input type="radio" name="month" id="month-12" onchange="validate()" value="12"'; echo ($month==12)?' checked>December':'>December';
 				?>		
 			</table>
-			<h3>Enter a Day:</h3>
+			<h4>Day:</h4>
 			<select onchange="validate()" name='day' id='day'>
 				<?php
 					for ($day=1; $day<32; $day++){
