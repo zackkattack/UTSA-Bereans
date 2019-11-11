@@ -21,7 +21,7 @@
         <form action="www.google.com" method='get'>
             <p>Username:<input type="text" name="login" id="first-name"></p>
 			<p>Password:<input type="password" name="login" id="password"></p>
-			<p>Dont have an account, make one <a href="newUser.php"><u>here</u></a></p>
+			<p>Dont have an account, make one <a href="register.php"><u>here</u></a></p>
 			<input type="submit" name="login" id="">
 		</form>
     </div>
