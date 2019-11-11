@@ -19,14 +19,14 @@
 		<h1>UTSA Bereans</h1>
 	</div>
 	
-    <div class='signup-form' action="">
+    <div class='signup-form'>
         <form action="login.php">
-            <p>First Name:<input type="text" name="create-user" id="first-name"></p>
-            <p>Last Name:<input type="text" name="create-user" id="last-name"></p>
-			<p>Username:<input type="text" onchange="validate();" name="create-user" id="username"></p>
+            <p>First Name:<input type="text" name="first-name" id="first-name"></p>
+            <p>Last Name:<input type="text" name="last-name" id="last-name"></p>
+			<p>Username:<input type="text" onchange="validate();" name="username" id="username"></p>
 			<p id='errLen' class='err'></p>
 			<p id='errChar' class='err'></p>
-            <p>Password:<input type="password" name="create-user" id="password"></p>
+            <p>Password:<input type="password" name="password" id="password"></p>
 
 			<h4>College:</h4>
 			<input type="radio" name="college" id="art">Fine Arts <br>
